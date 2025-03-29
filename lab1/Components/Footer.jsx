@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 
 export const Footer = () => (
     <View style={footerStyles.footer}>
-        <Text>Карпінський Олександр, ВТ-23-2</Text>
+        <Text>Карпінський Олександр Сергійович, ВТ-23-2</Text>
     </View>
 );
 

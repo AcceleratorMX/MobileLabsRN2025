@@ -1,13 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import {Footer} from "./Components/Footer";
+import {Header} from "./Components/Header";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start worasdaking on your app!</Text>
       <StatusBar style='auto' />
-      <Footer></Footer>
+      <Header />
+      <Footer />
     </View>
 
   );
