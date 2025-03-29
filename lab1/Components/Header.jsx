@@ -16,6 +16,7 @@ const headerStyles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
+        marginTop: 24,
         paddingVertical: 10,
         paddingHorizontal: 20,
         width: '100%'
@@ -23,7 +24,7 @@ const headerStyles = StyleSheet.create({
     },
     headerImage: {
         maxWidth: 120,
-        maxHeight: 40,
+        maxHeight: 50,
     },
     headerTitle: {
         fontSize: 20,
