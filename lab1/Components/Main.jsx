@@ -22,31 +22,26 @@ const Navbar = () => {
         navigation.navigate(routeName);
     };
 
+    const pages = [
+        {route: 'Home', icon: 'home', title: 'Головна'},
+        {route: 'Gallery', icon: 'images', title: 'Галерея'},
+        {route: 'Profile', icon: 'person', title: 'Профіль'}
+    ];
+
     return (
         <View style={mainStyles.navbar}>
-            <TouchableOpacity
-                style={mainStyles.navbarItem}
-                onPress={() => navigateTo('Home')}
-            >
-                <Icon name="home" size={20} color={getIconColor('Home')}/>
-                <Text style={[mainStyles.navbarItemTitle, {color: getIconColor('Home')}]}>Головна</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity
-                style={mainStyles.navbarItem}
-                onPress={() => navigateTo('Gallery')}
-            >
-                <Icon name="images" size={20} color={getIconColor('Gallery')}/>
-                <Text style={[mainStyles.navbarItemTitle, {color: getIconColor('Gallery')}]}>Галерея</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity
-                style={mainStyles.navbarItem}
-                onPress={() => navigateTo('Profile')}
-            >
-                <Icon name="person" size={20} color={getIconColor('Profile')}/>
-                <Text style={[mainStyles.navbarItemTitle, {color: getIconColor('Profile')}]}>Профіль</Text>
-            </TouchableOpacity>
+            {pages.map(page => (
+                <TouchableOpacity
+                    key={page.route}
+                    style={mainStyles.navbarItem}
+                    onPress={() => navigateTo(page.route)}
+                >
+                    <Icon name={page.icon} size={20} color={getIconColor(page.route)}/>
+                    <Text style={{...mainStyles.navbarItemTitle, color: getIconColor(page.route)}}>
+                        {page.title}
+                    </Text>
+                </TouchableOpacity>
+            ))}
         </View>
     );
 };
