@@ -3,15 +3,18 @@ import {View, StyleSheet, Text} from 'react-native';
 
 export const Home = () => {
     return (
-        <View style={homeStyles.home}>
-            <Text>home</Text>
+        <View style={homeStyles.container}>
+
         </View>
     );
 };
 
 const homeStyles = StyleSheet.create({
-    home: {
+    container: {
         flex: 1,
         backgroundColor: '#fff',
     },
+    newsList: {
+
+    }
 });
