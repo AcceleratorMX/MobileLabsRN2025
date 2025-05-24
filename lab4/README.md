@@ -11,4 +11,5 @@ To run the project, follow these steps:
 ![Date](screenshots/Screenshot%202025-05-24%20134629.png)
 
 ![Notifications](screenshots/Screenshot%202025-05-24%20134707.png)
+
 ![Deletion](screenshots/Screenshot%202025-05-24%20134753.png)
