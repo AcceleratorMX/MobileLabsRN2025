@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "lab4",
+    "slug": "lab4",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ztu.lab4test",
+      "infoPlist": {
+        "UIBackgroundModes": ["remote-notification"]
+      },
+      "entitlements": {
+        "aps-environment": "development",
+        "com.apple.security.application-groups": [
+          "group.${ios.bundleIdentifier}.onesignal"
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.ztu.lab4test"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      ["onesignal-expo-plugin", {
+        "mode": "development"
+      }]
+    ],
+    "extra": {
+      "oneSignalAppId": "594e1fa2-80c3-4910-8b39-b85f5bcdb774",
+      "oneSignalApiKey": "os_v2_app_lfhb7iuaynerbczzxbpvxtnxosuw4rgtgbhec55ervyjhfo3ghpdabdbljn4lfdyvkz5ezl3tadclbdspemjitmnnpbrwh5j26wx27y"
+    }
+  }
+}

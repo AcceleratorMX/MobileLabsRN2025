@@ -1,0 +1,225 @@
+import {StyleSheet} from 'react-native';
+import {COLORS} from '../constants';
+
+export const STYLES = StyleSheet.create({
+    // App
+    appContainer: {
+        flex: 1,
+        padding: 20,
+        paddingTop: 60,
+        backgroundColor: COLORS.DARK_BACKGROUND,
+    },
+    // CreateTodo
+    createContainer: {
+        marginTop: 20,
+        marginBottom: 20,
+        backgroundColor: COLORS.CARD_BACKGROUND,
+        borderRadius: 16,
+        padding: 20,
+        shadowColor: '#000',
+        shadowOffset: {width: 0, height: 4},
+        shadowOpacity: 0.3,
+        shadowRadius: 6,
+        elevation: 8,
+    },
+    sectionTitle: {
+        color: '#FFF',
+        fontSize: 20,
+        fontWeight: '600',
+        marginBottom: 16,
+        fontFamily: 'sans-serif-medium',
+    },
+    input: {
+        fontSize: 16,
+        backgroundColor: '#3A3A3A',
+        borderColor: '#3A3A3A',
+        borderWidth: 1,
+        borderRadius: 12,
+        paddingHorizontal: 16,
+        paddingVertical: 14,
+        marginBottom: 16,
+        color: '#FFF',
+    },
+    multilineInput: {
+        minHeight: 100,
+        textAlignVertical: 'top',
+    },
+    dateButton: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: '#3A3A3A',
+        borderRadius: 12,
+        paddingHorizontal: 16,
+        paddingVertical: 14,
+        marginBottom: 16,
+    },
+    dateText: {
+        fontSize: 16,
+        color: '#FFF',
+        marginLeft: 10,
+    },
+    submitButton: {
+        backgroundColor: COLORS.ACCENT,
+        paddingVertical: 16,
+        borderRadius: 12,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        shadowColor: COLORS.ACCENT,
+        shadowOffset: {width: 0, height: 4},
+        shadowOpacity: 0.4,
+        shadowRadius: 6,
+        elevation: 8,
+    },
+    buttonText: {
+        color: '#FFF',
+        fontSize: 16,
+        fontWeight: '600',
+        marginRight: 10,
+    },
+    // TodoCard
+    todoItem: {
+        backgroundColor: COLORS.CARD_BACKGROUND,
+        padding: 18,
+        borderRadius: 14,
+        marginBottom: 12,
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 16,
+        shadowColor: '#000',
+        shadowOffset: {width: 0, height: 2},
+        shadowOpacity: 0.2,
+        shadowRadius: 4,
+        elevation: 4,
+    },
+    todoInfo: {
+        flex: 1,
+    },
+    todoTitle: {
+        fontWeight: '600',
+        fontSize: 16,
+        marginBottom: 4,
+        color: '#FFF',
+    },
+    completedTitle: {
+        textDecorationLine: 'line-through',
+        color: COLORS.COMPLETED,
+    },
+    todoDescription: {
+        fontSize: 14,
+        color: COLORS.DESCRIPTION,
+        marginBottom: 8,
+    },
+    completedDescription: {
+        textDecorationLine: 'line-through',
+        color: COLORS.COMPLETED,
+    },
+    dateContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    todoDate: {
+        color: COLORS.DATE,
+        fontSize: 12,
+        marginLeft: 6,
+    },
+    deleteButton: {
+        backgroundColor: COLORS.DELETE,
+        width: 36,
+        height: 36,
+        borderRadius: 18,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    // MainScreen
+    mainContainer: {
+        flex: 1,
+    },
+    header: {
+        alignItems: 'center',
+        marginBottom: 20,
+    },
+    mainTitle: {
+        fontSize: 28,
+        fontWeight: '700',
+        color: '#FFF',
+        marginTop: 8,
+        fontFamily: 'sans-serif-medium',
+    },
+    emptyContainer: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 40,
+    },
+    emptyText: {
+        fontSize: 20,
+        color: COLORS.TEXT_GRAY,
+        marginTop: 16,
+        fontWeight: '600',
+    },
+    emptySubtext: {
+        fontSize: 14,
+        color: COLORS.SUBTEXT_GRAY,
+        marginTop: 8,
+    },
+    emptyList: {
+        flex: 1,
+    },
+    // ConfirmDelete
+    modalOverlay: {
+        flex: 1,
+        backgroundColor: 'rgba(0, 0, 0, 0.6)',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    modalContainer: {
+        backgroundColor: COLORS.CARD_BACKGROUND,
+        borderRadius: 16,
+        padding: 20,
+        width: '80%',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.3,
+        shadowRadius: 6,
+        elevation: 8,
+    },
+    modalTitle: {
+        fontSize: 18,
+        fontWeight: '600',
+        color: '#FFF',
+        marginBottom: 12,
+        textAlign: 'center',
+    },
+    modalMessage: {
+        fontSize: 14,
+        color: COLORS.DESCRIPTION,
+        marginBottom: 20,
+        textAlign: 'center',
+    },
+    modalButtons: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+    },
+    modalButton: {
+        flex: 1,
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingVertical: 12,
+        borderRadius: 12,
+        marginHorizontal: 8,
+    },
+    modalCancelButton: {
+        backgroundColor: COLORS.INCOMPLETE,
+    },
+    modalConfirmButton: {
+        backgroundColor: COLORS.DELETE,
+    },
+    modalButtonText: {
+        color: '#FFF',
+        fontSize: 14,
+        fontWeight: '600',
+        marginLeft: 8,
+    },
+});
